@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Lobster&display=swap" rel="stylesheet">
+    <title>Document</title>
+<!-- font awesome -->
+  <!-- <script src="https://kit.fontawesome.com/ef4cd9f538.js" crossorigin="anonymous"></script> -->
+  <!-- font awesome cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- daisy ui cdn link -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<link rel="stylesheet" href="./style/style.css">
+
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-navbar: #256B;
+        --color-banner: #DBEAFE;
+        --color-text: #D1D5DB;
+        --font-google:Playwrite CU Guides, cursive;
+      }
+      .active{
+        @apply bg-green-700 text-white
+      }
+    </style>
+</head>
+<body class="font-google">
+
+    <header class="">
+      <nav id="navbar">
+        <div class="navbar bg-navbar">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52  shadow">
+      <li><a href="" class="" id="">FAQ</a></li>
+      <li><a href="" class="" id="">Learn</a></li>
+      <li><a href="" class="" id="">Logout</a></li>
+      </ul>
+    </div>
+    <a class="btn-ghost text-xl flex items-center gap-2">
+      <span>English</span>
+      <img src="./assets/logo.png" alt="" class="">
+      <span class="bangla-font">জানালা</span>
+    </a>
+  </div>
+  <div class="navbar-end hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 space-x-2">
+      <li><a href="#faq-section" class="btn bg-blue-400 btn-outline btn-primary " id="">FAQ</a></li>
+      <li><a href="" class="btn bg-blue-400 btn-outline btn-primary" id="">Learn</a></li>
+      <li><a href="" class="btn bg-blue-400 btn-outline btn-primary" id="">Logout</a></li>
+    </ul>
+  </div>
+</div>
+      </nav>
+      <section id="banner" class="bg-banner py-10 flex lg:flex-row flex-col-reverse justify-center items-center ">
+        <div class="banner-text  w-11/12 mx-auto text-center space-y-2 md:flex-1">
+          <h1 class="text-4xl text-gray-600"><span class="text-green-600">English</span> is Easy!!</h1>
+          <p class="text-description px-32 bangla-font justify-center items-center">
+            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+          </p>
+          <div class="input-text justify-center items-center flex-col flex space-y-2">
+            <label class="input validator text-center">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+      <circle cx="12" cy="7" r="4"></circle>
+    </g>
+  </svg>
+  <input
+    type="text"
+    required
+    placeholder="Username"
+    pattern="[A-Za-z][A-Za-z0-9\-]*"
+    minlength="3"
+    maxlength="30"
+    title="Only letters, numbers or dash"
+    id="user"
+    value="mainul"
+    />
+</label>
+<label class="input validator  ">
+  <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <g
+      stroke-linejoin="round"
+      stroke-linecap="round"
+      stroke-width="2.5"
+      fill="none"
+      stroke="currentColor"
+    >
+      <path
+        d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+      ></path>
+      <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+    </g>
+  </svg>
+  <input
+    type="password"
+    required
+    placeholder="Password"
+    minlength="6"
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+    title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+    id="login-password"
+    value="123456"
+  />
+</label>
+
+<button class="btn-login btn w-1/12" id="btn-login">Login</button>
+          </div>
+        </div>
+        <div class="banner-img md:flex-1 ">
+            <img src="./assets/hero-student.png" alt="" class="w-full">
+        </div>
+      </section>
+    </header>
+    <main class="w-11/12 mx-auto">
+      <section id="learn-vocabularies">
+        <h1 class="text-4xl text-center"><span class="text-blue-300">Let's</span> Learn Vocabularies</h1>
+        <div id="Lessons-container" class="py-10 flex justify-center items-center gap-5 flex-wrap">    
+        </div>
+      </section>
+      <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center" id="lesson-card-section">
+
+        <div id="display-card" class="justify-center items-center bg-gray-100 w-full shadow-sm  col-span-full mx-auto">
+    <div class="flex flex-col justify-center items-center py-5 space-y-4">
+  <img src="./assets/alert-error.png" alt="">
+    <h1 class="text-sm text-slate-500">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</h1>
+<h1 class="text-3xl">নেক্সট Lesson এ যান</h1>
+    </div>
+</div>
+      </section>
+      <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <div id="modal-box" >
+
+    
+<!-- <div class="bg-base-100 ">
+    <div class="shadow-sm p-2 rounded">
+      <h1 class="">word</h1>
+      <h1 class="">meaning</h1>
+      <p class="">part of space</p>
+      <p class="">pronunciation</p>
+      <p class="">sentence</p>
+      <p class="">synonyms</p>
+    </div>
+    <button class="btn mt-5">compleate learning</button>
+</div> -->
+</div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+<section id="faq-section">
+  <div id="acordin" class="mt-10">
+    <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" checked="checked" />
+  <div class="collapse-title font-semibold">what is the difference between var,let and const ?</div>
+  <div class="collapse-content text-sm">var is the keyword of javascript and var is a global scope variable that's mean var value's can change or update  from anywhere in code. <br>
+  let is block scope variable it can be update from block .
+  <br>
+  And when declare a variable by const it can't be change or update
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">what is the difference between map(), forEach(), and filter() ?</div>
+  <div class="collapse-content text-sm">This three methods are using on array or array type of object . <br>
+    map() method is return a new array. If we need to do something with a array  but when we don't want to change our original array , there we use map method . <br>
+  
+    forEach method is also look like map method but difference is  it's never return a new array like map method . we use it when we have no need to store the value after work . <br>
+
+    filter method as like map method but it has slightly differences from froEach method . Filter method is using under condition return a new array but without changing value from original array . It returns a new array also like map method.
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">What Are Arrow Functions?</div>
+  <div class="collapse-content text-sm">arrow function is a shorter function of a normal function .</div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">How JavaScript Promises Work</div>
+  <div class="collapse-content text-sm">promises is working as an async function .Promise works on three condition . Pending, Resolved and Rejected. when we call api 
+    1st stage is pending until server is respond . Then if server is respond with Resolved then can see data or if server rejected the request then it fail to see data 
+  </div>
+</div>
+<div class="collapse collapse-arrow bg-base-100 border border-base-300">
+  <input type="radio" name="my-accordion-2" />
+  <div class="collapse-title font-semibold">How Closures Work in JavaScript ?</div>
+  <div class="collapse-content text-sm">function block variables can't be access from outside of function </div>
+</div>
+  </div>
+</section>
+
+    </main>
+    <footer class="mt-10">
+      <section id="footer" class="py-10 px-10 bg-blue-100">
+        <div class="flex justify-between items-center">
+        <div id="left-footer" class="">
+          <a class="flex items-center" href=""><span>English</span><img src="./assets/logo.png" alt=""><span class="bangla-font">জানালা</span></a>
+          <h2 class="bangla-font">ইংরেজি শিখুন সহজে</h2>
+          <p class="text-xs">Providing ED-Tech Applications since 2025</p>
+        </div>
+        <div id="right-footer" class="space-y-2">
+          <h2 class="text-xs font-semibold">Follow us</h2>
+          <div class="flex items-center gap-4">
+            <img src="./assets/fb-thumb.png" alt="">
+            <img src="./assets/youtube-thumb.png" alt="">
+            <img src="./assets/instagram-thumb.png" alt="">
+            <img src="./assets/github-thumb.png" alt="">
+          </div>
+        </div>
+        </div>
+
+      </section>
+    </footer>
+    <script src="./script/index.js"></script>
+</body>
+</html>
+
