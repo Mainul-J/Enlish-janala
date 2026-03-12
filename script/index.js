@@ -5,6 +5,15 @@ function removeActive (){
     }
 }
 
+//loading 
+function showLoader(){
+  document.getElementById("loader").classList.remove("hidden");
+}
+
+function hideLoader(){
+  document.getElementById("loader").classList.add("hidden");
+}
+
 // pronounceWord
 function pronounceWord(word) {
     console.log(word);
@@ -62,8 +71,10 @@ displayLessonsBtn(data.data);
 // load vocabularies word
 
 const loadWordByLevel =async(id) =>{
+showLoader();
+
 const url =`https://openapi.programming-hero.com/api/level/${id}`;
-// console.log(id);
+console.log(id);
 // console.log(url);
     const res = await fetch(url);
     const data = await res.json();
@@ -71,6 +82,7 @@ const url =`https://openapi.programming-hero.com/api/level/${id}`;
     document.getElementById(`btn-${id}`).classList.add('active')
     // console.log(data.data);
     displayWords(data.data);
+    hideLoader();
 }
 
 const loadDetails =async (id) => {

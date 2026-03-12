@@ -29,7 +29,7 @@
         --font-google:Playwrite CU Guides, cursive;
       }
       .active{
-        @apply bg-green-700 text-white
+        @apply bg-blue-700 text-white
       }
     </style>
 </head>
@@ -134,12 +134,19 @@
       </section>
     </header>
     <main class="w-11/12 mx-auto">
+
       <section id="learn-vocabularies">
         <h1 class="text-4xl text-center"><span class="text-blue-300">Let's</span> Learn Vocabularies</h1>
         <div id="Lessons-container" class="py-10 flex justify-center items-center gap-5 flex-wrap">    
         </div>
       </section>
+                    <!-- Loading Spinning   -->
+<div id="loader" class="col-span-full text-center py-10 hidden">
+<span class="loading loading-spinner loading-lg text-primary"></span>
+</div>
       <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items-center" id="lesson-card-section">
+
+
 
         <div id="display-card" class="justify-center items-center bg-gray-100 w-full shadow-sm  col-span-full mx-auto">
     <div class="flex flex-col justify-center items-center py-5 space-y-4">
