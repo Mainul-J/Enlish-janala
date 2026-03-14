@@ -117,7 +117,7 @@ const displayWords = (words) =>{
     cardContainer.innerHTML = " "
     if (words.length < 1){
         cardContainer.innerHTML=`
-          <div class="justify-center items-center bg-gray-100 w-full shadow-sm  col-span-full mx-auto">
+        <div class="justify-center items-center bg-gray-100 w-full shadow-sm  col-span-full mx-auto">
     <div class="flex flex-col justify-center items-center py-5 space-y-4">
   <img src="./assets/alert-error.png" alt="">
     <h1 class="text-sm text-slate-500">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</h1>
@@ -127,7 +127,7 @@ const displayWords = (words) =>{
         `;
         return ;
     }
-    words.forEach(word => {
+     words.forEach(word => {
         console.log(word);
         const div = document.createElement('div');
         div.innerHTML =`
@@ -152,7 +152,6 @@ cardContainer.append(div);
 
 const showDetails=(details)=>{
 console.log(details);
-
 const modalContainer = document.getElementById('modal-box');
 modalContainer.innerHTML ="";
 document.getElementById('my_modal_5').showModal();
